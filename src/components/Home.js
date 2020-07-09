@@ -3,8 +3,10 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-
-import Footer from "./Footer";
+import './../App.css';
+import EmailIcon from "@material-ui/icons/Email";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@material-ui/icons/Facebook";
 
 const useStyles = makeStyles((theme) => ({
   cardGrid: {
@@ -22,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
    
   },
   img: {
-      height:'300px',
+      height:'250px',
       [theme.breakpoints.down("sm")]: {
         height:'200px',
       },
@@ -60,9 +62,35 @@ export default function Album() {
             <p align="center" style={{fontSize:'50px'}} className="animate__animated animate__zoomIn">Bella Luna</p>
             <Typography className="animate__animated animate__fadeInDown animate__delay-1s">
              
-              <p>I graduated from Southeastern Louisiana University with Bachelors degree in Computer Science with minor in Mathematics.</p> 
-              <p>I am a Front-End Developer and a Graphic Designer from New Orleans, LA</p>
-              <p>Besides Designing and Coding, I love to watch movies, cook, play guitar and paint!</p>
+              <h3>We are Lousiana based small online company who are here to provide you with the best Custom Projects.</h3> 
+             
+              <div align="center">
+              <a
+                href="https://www.instagram.com/letthedesignflow"
+                target="_blank"
+                style={{ color: "black" }}
+              >
+                <InstagramIcon fontSize="large" />
+              </a>
+              <a
+                href="https://www.facebook.com/letthedesignflow"
+                target="_blank"
+                style={{ color: "black" }}
+              >
+                {" "}
+                <FacebookIcon fontSize="large" />
+              </a>
+
+              <a
+                href="mailto:bela.luna61@gmail.com"
+                target="_blank"
+                style={{ color: "black" }}
+              >
+                {" "}
+                <EmailIcon fontSize="large" />
+              </a>
+              
+            </div>
             </Typography>          
           </Grid>
         </Grid>
@@ -72,9 +100,8 @@ export default function Album() {
             <p align="center" style={{fontSize:'50px'}} className="animate__animated animate__zoomIn">What we do</p>
             <Typography className="animate__animated animate__fadeInDown animate__delay-1s">
              
-              <p>I graduated from Southeastern Louisiana University with Bachelors degree in Computer Science with minor in Mathematics.</p> 
-              <p>I am a Front-End Developer and a Graphic Designer from New Orleans, LA</p>
-              <p>Besides Designing and Coding, I love to watch movies, cook, play guitar and paint!</p>
+            <p>We provide the best prices with free shipping. No Gimmick. </p>
+              <p>Have a design needed printed on a shirt, mug, cups or need help with the design itself? Reach out to us!</p>
             </Typography>          
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={6} align="center"  className="animate__animated animate__jackInTheBox" >
@@ -85,7 +112,7 @@ export default function Album() {
 
         
       </Container>
-      <Footer/>
+  
     </React.Fragment>
   );
 }

@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import { animateScroll as scroll } from "react-scroll";
 import { Box } from "@material-ui/core";
 import EmailIcon from "@material-ui/icons/Email";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 
@@ -105,17 +104,17 @@ export default function Footer() {
               className={classes.headerlink}
             ></Typography>
             <ul>
-              <Link to="/skills" className={classes.link}>
-                <li>Category </li>
+              <Link to="/blogs" className={classes.link}>
+                <li>Blogs </li>
               </Link>
-              <Link to="/workhistory" className={classes.link}>
-                <li>Category </li>
+              <Link to="/customer" className={classes.link}>
+                <li>Customer </li>
               </Link>
               <Link to="/portfolio" className={classes.link}>
                 <li>Category </li>
               </Link>
-              <Link to="/hobbies" className={classes.link}>
-                <li>Category </li>
+              <Link to="/products" className={classes.link}>
+                <li>Products </li>
               </Link>
             </ul>
           </Grid>
