@@ -7,6 +7,7 @@ import './../App.css';
 import EmailIcon from "@material-ui/icons/Email";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
+import Carousel from './Carosel'
 
 const useStyles = makeStyles((theme) => ({
   cardGrid: {
@@ -51,10 +52,10 @@ export default function Album() {
   return (
     <React.Fragment>
      
-
-      <Container className={classes.cardGrid} maxWidth="lg">
+      <Carousel/>
+      <Container className={classes.cardGrid} maxWidth="lg" >
         {/* End hero unit */}
-        <Grid container spacing={4}>
+        <Grid container spacing={4} style={{minHeight:'80vh', display:'flex', alignItems:'center'}}>
           <Grid item xs={12} sm={12} md={6} lg={6} align="center"  className="animate__animated animate__jackInTheBox" >
             <img src="https://d2ct9xspam8wud.cloudfront.net/blog/2019/07/25140723/Design_elements.png" alt="" className={classes.img}/>
           </Grid>
@@ -94,8 +95,11 @@ export default function Album() {
             </Typography>          
           </Grid>
         </Grid>
-            <div style={{margin:'100px 0'}}></div>
-        <Grid container spacing={4}>
+        </Container>
+        <div style={{backgroundColor:'#e4e4e4'}}>
+        <Container className={classes.cardGrid} maxWidth="lg" >
+           
+        <Grid container spacing={4} style={{minHeight:'80vh', display:'flex', alignItems:'center', }}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
             <p align="center" style={{fontSize:'50px'}} className="animate__animated animate__zoomIn">What we do</p>
             <Typography className="animate__animated animate__fadeInDown animate__delay-1s">
@@ -110,9 +114,9 @@ export default function Album() {
           
         </Grid>
 
-        
+       
       </Container>
-  
+      </div>
     </React.Fragment>
   );
 }

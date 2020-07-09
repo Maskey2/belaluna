@@ -12,7 +12,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 
 function Copyright() {
   return (
-    <Typography component={"span"} variant="body2" style={{ color: "#aaadaa" }}>
+    <Typography component={"span"} variant="body2" style={{ color: "#e4e4e4" }}>
       <Box display={{ xs: "block", sm: "none" }}>
         <br />
       </Box>
@@ -42,11 +42,12 @@ const useStyles = makeStyles((theme) => ({
   },
   headerlink: {
     textDecoration: "none",
+    color:'white',
     fontSize: "25px",
   },
   link: {
     textDecoration: "none",
-    color: "black",
+    color: "white",
     fontSize: "18px",
     lineHeight: "1.5",
     [theme.breakpoints.down("md")]: {
@@ -65,6 +66,9 @@ const useStyles = makeStyles((theme) => ({
     padding: "4px",
     margin: "3px",
   },
+  icon:{
+    color:'white'
+  }
 }));
 
 const handleClick = (event) => {
@@ -74,7 +78,7 @@ const handleClick = (event) => {
 export default function Footer() {
   const classes = useStyles();
   return (
-    <Grid style={{ backgroundColor: "#e4e4e4", marginTop: "50px" }}>
+    <Grid style={{ backgroundColor: "#438c9c"}}>
       <Container maxWidth="lg" component="footer" className={classes.footer}>
         <Grid container spacing={2}>
           <Grid item xs={6} sm={3} md={4} lg={4}>
@@ -134,7 +138,7 @@ export default function Footer() {
                 target="_blank"
                 style={{ color: "black" }}
               >
-                <InstagramIcon fontSize="large" />
+                <InstagramIcon fontSize="large" className={classes.icon}/>
               </a>
               <a
                 href="https://www.facebook.com/letthedesignflow"
@@ -142,20 +146,17 @@ export default function Footer() {
                 style={{ color: "black" }}
               >
                 {" "}
-                <FacebookIcon fontSize="large" />
+                <FacebookIcon fontSize="large" className={classes.icon}/>
               </a>
-              <p>
-                <EmailIcon
-                  style={{ verticalAlign: "middle" }}
-                  fontSize="large"
-                />{" "}
-                <a
-                  style={{ textDecoration: "none", color: "black" }}
-                  href="mailto:bela.luna61@gmail.com"
-                >
-                  bela.luna61@gmail.com
-                </a>
-              </p>
+              <a
+                href="mailto:bela.luna61@gmail.com"
+                target="_blank"
+                style={{ color: "black" }}
+              >
+                {" "}
+                <EmailIcon fontSize="large" className={classes.icon}/>
+              </a>
+              
             </div>
           </Grid>
         </Grid>

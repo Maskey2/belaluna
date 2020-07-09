@@ -38,7 +38,8 @@ const useStyles = makeStyles(theme => ({
     { 
       fontSize: '16px',
       textDecoration: 'none',
-      color: 'black',
+      color: 'white',
+      fontFamily:'Poppins',
       display:'flex',
       marginBottom:'8px', 
       justifyContent: 'space-evenly',
@@ -91,7 +92,7 @@ function ElevateAppBar(props) {
   return (    
     <React.Fragment>
       <ElevationScroll {...props}> 
-      <AppBar className={classes.root} position="sticky" style={{ backgroundColor: '#daad86', height:'55px'}}>        
+      <AppBar className={classes.root} position="sticky" style={{ backgroundColor: '#438c9c', height:'55px'}}>        
         <Toolbar >
         <Typography component={'span'} color="inherit" style={{flexGrow:1}}> 
           <Link to="/" className={classes.link}>Home
@@ -105,9 +106,7 @@ function ElevateAppBar(props) {
           <Link to="/customer" className={classes.link}>Customer</Link></Typography>
           <Typography component={'span'}  color="inherit" style={{flexGrow:1}}> 
           <Link to="/blogs" className={classes.link}>Blogs</Link></Typography>
-          <Typography component={'span'}   color="inherit"style={{flexGrow:1}} >
-            <Link to="/category" className={classes.link}>Category
-            </Link></Typography> 
+         
             <Typography component={'span'}   color="inherit"style={{flexGrow:1}} >
             <Link to="/contact" className={classes.link}>Contact
             </Link></Typography>  
