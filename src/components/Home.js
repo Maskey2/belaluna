@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   img: {
       height:'250px',
       [theme.breakpoints.down("sm")]: {
-        height:'200px',
+        height:'140px',
       },
   },
   title: {

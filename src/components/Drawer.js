@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     width: 'auto',
   },
   color: {
-    backgroundColor: '#daad86'  ,
+    backgroundColor: '#438c9c'  ,
 color: 'white'    
 },
 reslogo: {
@@ -26,13 +26,13 @@ reslogo: {
 },
 reslink: {
     textDecoration: 'none',
-    color: '#daad86',
+    color: '#438c9c',
     fontWeight: 'bold',
     fontSize: '18px',
 },
 reslink2: {
     textDecoration: 'none',
-    color: '#213C54',
+    color: '#438c9c',
     fontSize: '18px',
 },
 
