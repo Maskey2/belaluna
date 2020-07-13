@@ -38,7 +38,7 @@ export default function Product() {
   return (
     <Grid>
         
-      <Container maxWidth="md" component="main" >
+      <Container maxWidth="md" style={{minHeight:'63vh'}}>
         <Typography component="h2" align="center" className={classes.pagetitle} >
           Customer's Feedback
         </Typography>

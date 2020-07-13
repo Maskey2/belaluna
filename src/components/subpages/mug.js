@@ -40,7 +40,7 @@ export default function Product() {
         
       <Container maxWidth="md" style={{minHeight:'63vh'}} >
         <Typography component="h2" align="center" className={classes.pagetitle} >
-          About
+          Mugs/ Cups
         </Typography>
         <Typography component="h2" align="center" className={classes.pagesubtitle}>
          Let's talk about us
