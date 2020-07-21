@@ -17,7 +17,7 @@ function Copyright() {
         <br />
       </Box>
       {"Copyright ©     "}
-      Bella Luna
+      Bela Luna
       {new Date().getFullYear()}
       {"."}
     </Typography>

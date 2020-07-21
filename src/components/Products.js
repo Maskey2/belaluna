@@ -6,13 +6,16 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link } from "react-router-dom";
-
+import Header1 from './../assets/productheader1.png'
+import Header2 from './../assets/productheader2.png'
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
 const useStyles = makeStyles((theme) => ({
   pagetitle: {
     color: "#231f20",
     paddingTop: "30px",
-    fontFamily: "Roboto, sans-serif",
+    fontFamily: "Poppins, sans-serif",
     fontWeight: 600,
     fontSize: "55px",
     [theme.breakpoints.down("md")]: {
@@ -21,9 +24,9 @@ const useStyles = makeStyles((theme) => ({
     
   },
   pagesubtitle: {
-    fontFamily: "Roboto, sans-serif",
     paddingBottom: "40px",
     fontSize: "25px",
+    fontFamily: "Poppins, sans-serif",
     [theme.breakpoints.down("md")]: {
       fontSize: "23px", 
     },
@@ -34,10 +37,17 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     height:'130px',
+    margin:'10px',
     [theme.breakpoints.down("sm")]: {
       height:'140px',
     },
 },
+headerimg: {
+  height:'500px',
+  [theme.breakpoints.down("sm")]: {
+    height:'140px',
+}
+}
 }));
 
 export default function Portfolio() {
@@ -49,11 +59,11 @@ export default function Portfolio() {
           Products
         </Typography>
         <Typography component="h2" align="center" className={classes.pagesubtitle}>
-         <strong>Art, Design and Development</strong>
+         <strong>Art, Design and Development</strong>        
         </Typography>
-        <Typography component="h2" align="center" className={classes.pagesubtitle}>
-         Custom Design
-        </Typography>
+
+        
+        <img src={Header2} alt="" className={classes.headerimg} />
         <Grid container spacing={2} alignItems="center" justify="center">
           <Grid item xs={12} sm={12} md={4} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
             <Link to="/tshirt">
@@ -82,9 +92,10 @@ export default function Portfolio() {
              </Grid>
             
         <hr/>
-        <Typography component="h2" align="center" className={classes.pagesubtitle}>
+        {/* <Typography component="h2" align="center" className={classes.pagesubtitle}>
          Digital Design
-        </Typography>
+        </Typography> */}
+        <img src={Header1} alt="" className={classes.headerimg}/>
         <Grid container spacing={2} alignItems="center" justify="center">
           <Grid item xs={12} sm={12} md={4} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
             <img src="https://miro.medium.com/max/1170/0*XXHFZiL1N1fHWaPW.jpg" alt="" className={classes.img}/>

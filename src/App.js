@@ -23,7 +23,7 @@ import Top from './components/Top'
 export default function App() {
   return (
     <Router>
-      <Top/>
+   
       <Navbar/>
       <Box display={{ md: 'block', lg: 'none' }} ><Drawer/></Box>
       <Box display={{ xs: 'none', sm: 'block', md: 'none' }}><br/><br/><br/></Box>

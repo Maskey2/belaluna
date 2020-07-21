@@ -6,8 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import {Link} from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-
+import Logo from './../assets/logo.png'
 
 const useStyles = makeStyles(theme => ({
   root: {    
@@ -36,31 +35,33 @@ const useStyles = makeStyles(theme => ({
   },
   link:
     { 
-      fontSize: '16px',
+      fontSize: '22px',
       textDecoration: 'none',
-      color: 'white',
+      color: '#438c9c',
       fontFamily:'Poppins',
       display:'flex',
-      marginBottom:'8px', 
+      padding:'8px', 
       justifyContent: 'space-evenly',
       [theme.breakpoints.down('sm')]: {
         display:'none',
       },
       '&:hover': {
-        transform:'scale(1.1)',
-        transition: 'transform .7s ease-in-out',
+        color: '#ffffff',
+        backgroundColor:'#438c9c',
+        transform:'scale(1.01)',
+        transition: 'transform .5s ease-in-out',
      },   
     },
         
     reslink:
     {
         textDecoration: 'none',
-        color: '#213C54',
+        color: '#438c9c',
     },
      reslink2:
     {
         textDecoration: 'none',
-        color: '#213C54',
+        color: '#438c9c',
        fontSize:'15px'
     },
     
@@ -92,8 +93,13 @@ function ElevateAppBar(props) {
   return (    
     <React.Fragment>
       <ElevationScroll {...props}> 
-      <AppBar className={classes.root} position="sticky" style={{ backgroundColor: '#438c9c', height:'55px'}}>        
+      <AppBar className={classes.root} position="sticky" style={{ backgroundColor: '#fafafa', height:'120px'}}>        
         <Toolbar >
+        <Typography component={'span'} color="inherit" style={{flexGrow:1}}>  
+        <img src={Logo} alt="" height="105px" style={{padding:'5px'}}/>         
+          </Typography>
+          <Typography component={'span'} color="inherit" style={{flexGrow:1}}>           
+          </Typography>
         <Typography component={'span'} color="inherit" style={{flexGrow:1}}> 
           <Link to="/" className={classes.link}>Home
           </Link></Typography>
@@ -101,12 +107,20 @@ function ElevateAppBar(props) {
           <Link to="/about" className={classes.link}>About
           </Link></Typography>
           <Typography component={'span'}  color="inherit" style={{flexGrow:1}}> 
-          <Link to="/products" className={classes.link}>Products</Link></Typography>
-      
-         
+          <Link to="/products" className={classes.link}>Products</Link></Typography>  
             <Typography component={'span'}   color="inherit"style={{flexGrow:1}} >
             <Link to="/contact" className={classes.link}>Contact
             </Link></Typography>  
+            <Typography component={'span'}   color="inherit"style={{flexGrow:1}} >
+            <Link to="/contact" className={classes.link}>
+            </Link></Typography> 
+            <Typography component={'span'}   color="inherit"style={{float:'right'}} >
+            <Link to="/contact" className={classes.link}>Shop (0)
+            </Link></Typography>
+            <Typography component={'span'}   color="inherit"style={{float:'right', border:'1px solid black', margin:'5px'}} >
+            <Link to="/contact" className={classes.link}>Login
+            </Link></Typography> 
+             
       </Toolbar>
       </AppBar>
       </ElevationScroll>    
