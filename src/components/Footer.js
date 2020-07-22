@@ -108,18 +108,18 @@ export default function Footer() {
               className={classes.headerlink}
             ></Typography>
             <ul>
-              <Link to="/blogs" className={classes.link}>
-                <li>Blogs </li>
+            <Link to="/products" className={classes.link}>
+                <li>Products </li>
               </Link>
               <Link to="/customer" className={classes.link}>
                 <li>Customer </li>
+              </Link>             
+              <Link to="/privacy" className={classes.link}>
+                <li>Privacy Policy </li>
               </Link>
-              <Link to="/portfolio" className={classes.link}>
-                <li>Category </li>
-              </Link>
-              <Link to="/products" className={classes.link}>
-                <li>Products </li>
-              </Link>
+              <Link to="/terms" className={classes.link}>
+                <li>Terms and Conditions </li>
+              </Link>              
             </ul>
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>
@@ -149,7 +149,7 @@ export default function Footer() {
                 <FacebookIcon fontSize="large" className={classes.icon}/>
               </a>
               <a
-                href="mailto:bela.luna61@gmail.com"
+                href="mailto:letthedesignflow@gmail.com"
                 target="_blank"
                 style={{ color: "black" }}
               >

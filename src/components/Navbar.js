@@ -11,19 +11,15 @@ import Logo from './../assets/logo.png'
 const useStyles = makeStyles(theme => ({
   root: {    
     [theme.breakpoints.down('sm')]: {
-   
+      display:'none', 
     },    
   },
-  tree:{
-    fontSize: '16px',
-    textDecoration: 'none',
-    color: 'black',
-    display:'flex',
-    marginBottom:'8px', 
-    justifyContent: 'space-evenly',
-    padding: theme.spacing(1),
+  
+  logo:{
+    height:"105px",
+    padding:'5px',
     [theme.breakpoints.down('sm')]: {
-      marginBottom:'0px', 
+      display:'none', 
       
     },
   },
@@ -93,10 +89,14 @@ function ElevateAppBar(props) {
   return (    
     <React.Fragment>
       <ElevationScroll {...props}> 
+      
       <AppBar className={classes.root} position="sticky" style={{ backgroundColor: '#fafafa', height:'120px'}}>        
         <Toolbar >
+        
         <Typography component={'span'} color="inherit" style={{flexGrow:1}}>  
-        <img src={Logo} alt="" height="105px" style={{padding:'5px'}}/>         
+        <Link to="/" >
+        <img src={Logo} alt="" className={classes.logo}/>  
+        </Link>       
           </Typography>
           <Typography component={'span'} color="inherit" style={{flexGrow:1}}>           
           </Typography>

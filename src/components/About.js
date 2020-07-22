@@ -4,6 +4,12 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
+import a1 from './../assets/a1.jpg'
+import a2 from './../assets/a2.jpg'
+import a3 from './../assets/a3.jpg'
+import a4 from './../assets/a4.jpg'
+import { Link } from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
   pagetitle: {
@@ -25,6 +31,15 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "23px", 
     },
   },
+  img:{
+    height: "auto",
+    width: "100%",
+    '&:hover': {
+      cursor:'pointer',
+      transform:'scale(1.05)',
+      transition: 'transform .5s ease-in-out',
+   },   
+  },
   pageContent: {
     padding: "30px",
     fontSize: "18px",
@@ -38,14 +53,39 @@ export default function Product() {
   return (
     <Grid>
         
-      <Container maxWidth="md" style={{minHeight:'63vh'}} >
+      <Container maxWidth="lg" style={{minHeight:'63vh'}} >
         <Typography component="h2" align="center" className={classes.pagetitle} >
           About
         </Typography>
         <Typography component="h2" align="center" className={classes.pagesubtitle}>
-         Let's talk about us
+        We are Lousiana based small online company
+who are here to provide you with the best Custom Projects.
+We are here to support you and
+provide you the brand recognition and attention you deserve!
         </Typography>
-        <hr/>
+        <Grid container spacing={2} alignItems="center" justify="center" style={{marginBottom:'10px'}}>
+       
+          <Grid item xs={12} sm={12} md={4} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <Link to="/tshirt">
+            <img src={a1} alt="" className={classes.img}/>
+            </Link>
+          </Grid>
+          <Grid item xs={12} sm={12} md={4} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <Link to="/button">
+            <img src={a2} alt="" className={classes.img}/>
+            </Link>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <Link to="/claypot">
+            <img src={a3} alt="" className={classes.img}/>
+            </Link>
+          </Grid>  
+          <Grid item xs={12} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <Link to="/mug">
+            <img src={a4} alt="" className={classes.img}/>
+           </Link>
+          </Grid>      
+             </Grid>
       </Container>
 
        

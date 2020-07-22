@@ -78,8 +78,8 @@ export default function TemporaryDrawer() {
         <Box	display={{ xs: 'block', md: 'none', sm: 'block', lg: 'none' }} >
       {['left'].map(anchor => (
         <React.Fragment key={anchor}>
-            <AppBar  className={classes.color} >        
-          <Toolbar >
+            <AppBar  className={classes.color}>        
+          <Toolbar  >
             <Grid container direction = "row" justify = "space-between"  >            
               <MenuIcon style={{fontSize:'30px', color:'black'}} onClick={toggleDrawer(anchor, true)}>{anchor}/></MenuIcon>          
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
@@ -89,6 +89,7 @@ export default function TemporaryDrawer() {
           </Grid>
           </Toolbar>
         </AppBar>
+        
         </React.Fragment>
       ))}
       </Box>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import { Carousel } from 'react-responsive-carousel';
-import Header1 from '../assets/Header1.jpg'
+import Header1 from '../assets/header.jpg'
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
       //zIndex: "999",
       margin: "auto",      
       right: "41%",
-      top: "95%",
+      top: "65%",
       textAlign: "center",
       width: "17%",
       borderRadius: "10px",
@@ -37,8 +37,8 @@ function Home () {
       
             
             <div><img src={Header1} alt="" style={{height:'auto', width:'100%'}}/>
-            <Link to="./customer">
-            <p className={classes.legend}>See the Demo</p>
+            <Link to="./products">
+            <p className={classes.legend}>Check out Products</p>
           </Link></div>
             
         
