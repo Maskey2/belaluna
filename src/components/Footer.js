@@ -17,9 +17,9 @@ function Copyright() {
         <br />
       </Box>
       {"Copyright ©     "}
-      Bela Luna
+      Bela Luna {" "}
       {new Date().getFullYear()}
-      {"."}
+      
     </Typography>
   );
 }
@@ -87,7 +87,7 @@ export default function Footer() {
             </Typography>
             <ul>
               <Link
-                to="/dashboard"
+                to="/"
                 className={classes.link}
                 onClick={handleClick}
               >
@@ -96,9 +96,7 @@ export default function Footer() {
               <a href="/about" className={classes.link}>
                 <li>About </li>{" "}
               </a>
-              <a href="/extra" className={classes.link}>
-                <li>Contact </li>{" "}
-              </a>
+              
             </ul>
           </Grid>
           <Grid item xs={6} sm={3} md={4} lg={4}>
@@ -109,17 +107,17 @@ export default function Footer() {
             ></Typography>
             <ul>
             <Link to="/products" className={classes.link}>
-                <li>Products </li>
+                <li>Designs </li>
               </Link>
               <Link to="/customer" className={classes.link}>
-                <li>Customer </li>
+                <li>Customers </li>
               </Link>             
-              <Link to="/privacy" className={classes.link}>
+              {/* <Link to="/privacy" className={classes.link}>
                 <li>Privacy Policy </li>
               </Link>
               <Link to="/terms" className={classes.link}>
                 <li>Terms and Conditions </li>
-              </Link>              
+              </Link>               */}
             </ul>
           </Grid>
           <Grid item xs={12} sm={6} md={4} lg={4}>

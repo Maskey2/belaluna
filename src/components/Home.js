@@ -84,9 +84,8 @@ export default function Album() {
             </p>
             <Typography className="animate__animated animate__fadeInDown animate__delay-1s">
               <h3 align="center">
-                We are Lousiana based small online company <br/>who are here to
-                provide you with the best Custom Projects.<br/>We are here to support you and <br/>
-                provide you the brand recognition and attention you deserve!
+                We are  are here to
+                provide you with the best Custom Projects.<br/>
               </h3>
 
               <div align="center">
@@ -135,9 +134,7 @@ export default function Album() {
                 What we do
               </p>
               <Typography className="animate__animated animate__fadeInDown animate__delay-1s">
-                <p>
-                  We provide the great custom products with best prices with free shipping. No Gimmick.{" "}
-                </p>
+                
                 <p>
                   Have a design needed printed on a shirt, cups, stickers or need
                   help with the design itself? Reach out to us!

@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
   },
   
   logo:{
-    height:"105px",
+    height:"75px",
     padding:'5px',
     [theme.breakpoints.down('sm')]: {
       display:'none', 
@@ -90,7 +90,7 @@ function ElevateAppBar(props) {
     <React.Fragment>
       <ElevationScroll {...props}> 
       
-      <AppBar className={classes.root} position="sticky" style={{ backgroundColor: '#fafafa', height:'120px'}}>        
+      <AppBar className={classes.root} position="sticky" style={{ backgroundColor: '#fafafa', height:'80px'}}>        
         <Toolbar >
         
         <Typography component={'span'} color="inherit" style={{flexGrow:1}}>  
@@ -107,19 +107,19 @@ function ElevateAppBar(props) {
           <Link to="/about" className={classes.link}>About
           </Link></Typography>
           <Typography component={'span'}  color="inherit" style={{flexGrow:1}}> 
-          <Link to="/products" className={classes.link}>Products</Link></Typography>  
+          <Link to="/products" className={classes.link}>Designs</Link></Typography>  
             <Typography component={'span'}   color="inherit"style={{flexGrow:1}} >
             <Link to="/contact" className={classes.link}>Contact
             </Link></Typography>  
             <Typography component={'span'}   color="inherit"style={{flexGrow:1}} >
             <Link to="/contact" className={classes.link}>
             </Link></Typography> 
-            <Typography component={'span'}   color="inherit"style={{float:'right'}} >
+            {/* <Typography component={'span'}   color="inherit"style={{float:'right'}} >
             <Link to="/contact" className={classes.link}>Shop (0)
             </Link></Typography>
             <Typography component={'span'}   color="inherit"style={{float:'right', border:'1px solid black', margin:'5px'}} >
             <Link to="/contact" className={classes.link}>Login
-            </Link></Typography> 
+            </Link></Typography>  */}
              
       </Toolbar>
       </AppBar>

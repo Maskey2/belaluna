@@ -58,29 +58,25 @@ export default function Product() {
           About
         </Typography>
         <Typography component="h2" align="center" className={classes.pagesubtitle}>
-        We are Lousiana based small online company
-who are here to provide you with the best Custom Projects.
-We are here to support you and
-provide you the brand recognition and attention you deserve!
+       
+                We are  are here to
+                provide you with the best Custom Projects.<br/>
+              
         </Typography>
         <Grid container spacing={2} alignItems="center" justify="center" style={{marginBottom:'10px'}}>
        
-          <Grid item xs={12} sm={12} md={4} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <Grid item xs={12} sm={12} md={4} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
           <Link to="/tshirt">
             <img src={a1} alt="" className={classes.img}/>
             </Link>
           </Grid>
-          <Grid item xs={12} sm={12} md={4} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/button">
-            <img src={a2} alt="" className={classes.img}/>
-            </Link>
-          </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+         
+          <Grid item xs={12} sm={12} md={6} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
           <Link to="/claypot">
             <img src={a3} alt="" className={classes.img}/>
             </Link>
           </Grid>  
-          <Grid item xs={12} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <Grid item xs={12} sm={12} md={6} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
           <Link to="/mug">
             <img src={a4} alt="" className={classes.img}/>
            </Link>

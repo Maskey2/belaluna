@@ -8,3 +8,6 @@ body{
     height:100%;
     width:auto;
 }
+a{
+    text-decoration: none;
+}

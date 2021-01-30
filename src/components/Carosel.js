@@ -36,9 +36,9 @@ function Home () {
        <div>                       
       
             
-            <div><img src={Header1} alt="" style={{height:'auto', width:'100%'}}/>
+            <div  className="animate__animated animate__fadeIn "><img src={Header1} alt="" style={{height:'auto', width:'100%'}}/>
             <Link to="./products">
-            <p className={classes.legend}>Check out Products</p>
+            {/* <p className={classes.legend}  className="animate__animated animate__bounceInDown">Check out Products</p> */}
           </Link></div>
             
         
