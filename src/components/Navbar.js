@@ -10,7 +10,7 @@ import Logo from './../assets/logo.png'
 
 const useStyles = makeStyles(theme => ({
   root: {    
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('xs')]: {
       display:'none', 
     },    
   },
@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   logo:{
     height:"75px",
     padding:'5px',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('xs')]: {
       display:'none', 
       
     },
@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
       display:'flex',
       padding:'8px', 
       justifyContent: 'space-evenly',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('xs')]: {
         display:'none',
       },
       '&:hover': {

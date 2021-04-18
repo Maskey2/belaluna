@@ -4,10 +4,10 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
-import a1 from './../assets/a1.jpg'
-import a2 from './../assets/a2.jpg'
-import a3 from './../assets/a3.jpg'
-import a4 from './../assets/a4.jpg'
+import Web from './../assets/wit.jpg'
+import Gra from './../assets/graphic.jpg'
+import Tsh from './../assets/tshirt.jpg'
+import Sti from './../assets/sticker.jpg'
 import { Link } from "react-router-dom";
 
 
@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   pagetitle: {
     color: "#231f20",
     paddingTop: "30px",
-    fontFamily: "Roboto, sans-serif",
+    fontFamily: 'Poppins', 
     fontWeight: 600,
     fontSize: "55px",
     [theme.breakpoints.down("md")]: {
@@ -24,26 +24,34 @@ const useStyles = makeStyles((theme) => ({
     
   },
   pagesubtitle: {
-    fontFamily: "Roboto, sans-serif",
+    fontFamily: 'Poppins', 
     paddingBottom: "40px",
     fontSize: "25px",
     [theme.breakpoints.down("md")]: {
       fontSize: "23px", 
     },
   },
-  img:{
-    height: "auto",
-    width: "100%",
+  titles:{
+    color: "#fff",
+    fontSize: "20px",
+    padding:'10px 30px',
+    borderRadius:'5px',
+    fontFamily: 'Poppins', 
+    backgroundColor:"#438c9c",
     '&:hover': {
-      cursor:'pointer',
-      transform:'scale(1.05)',
-      transition: 'transform .5s ease-in-out',
-   },   
+      color: "#000",
+      backgroundColor:"#e2d929",
+    }
+ 
   },
   pageContent: {
     padding: "30px",
     fontSize: "18px",
   },
+  titleimg:{
+    width:'300px',
+    height:'auto'
+  }
  
 }));
 
@@ -57,30 +65,37 @@ export default function Product() {
         <Typography component="h2" align="center" className={classes.pagetitle} >
           About
         </Typography>
-        <Typography component="h2" align="center" className={classes.pagesubtitle}>
-       
+        <Typography component="h2" align="center" className={classes.pagesubtitle}>       
                 We are  are here to
-                provide you with the best Custom Projects.<br/>
-              
+                help you promote and market your brand.<br/>              
         </Typography>
         <Grid container spacing={2} alignItems="center" justify="center" style={{marginBottom:'10px'}}>
        
-          <Grid item xs={12} sm={12} md={4} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/tshirt">
-            <img src={a1} alt="" className={classes.img}/>
+          <Grid item xs={12} sm={12} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <Link to="/products">
+            <p className={classes.titles}>Website Development</p>
+            <img src={Web} alt="" className={classes.titleimg}/>  
             </Link>
           </Grid>
          
-          <Grid item xs={12} sm={12} md={6} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/claypot">
-            <img src={a3} alt="" className={classes.img}/>
+          <Grid item xs={12} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <Link to="/products">
+          <p className={classes.titles}>Graphic Design</p>
+          <img src={Gra} alt="" className={classes.titleimg}/> 
             </Link>
           </Grid>  
-          <Grid item xs={12} sm={12} md={6} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/mug">
-            <img src={a4} alt="" className={classes.img}/>
+          <Grid item xs={12} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <Link to="/products">
+          <p className={classes.titles}>Custom T-Shirts</p>
+          <img src={Tsh} alt="" className={classes.titleimg}/> 
            </Link>
-          </Grid>      
+          </Grid>    
+          <Grid item xs={12} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <Link to="/products">
+          <p className={classes.titles}>Custom Stickers</p>
+          <img src={Sti} alt="" className={classes.titleimg}/> 
+           </Link>
+          </Grid>    
              </Grid>
       </Container>
 

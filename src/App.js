@@ -25,8 +25,8 @@ export default function App() {
     <Router>
    
       <Navbar/>
-      <Box display={{ md: 'block', lg: 'none' }} ><Drawer/></Box>
-      <Box display={{ xs: 'none', sm: 'block', md: 'none' }}><br/><br/><br/></Box>
+      <Box display={{ xs: 'block', sm: 'none', md: 'none', lg: 'none' }} ><Drawer/></Box>
+      {/* <Box display={{ xs: 'block', sm: 'block', md: 'none' }}><br/><br/><br/></Box> */}
       <Switch>       
         <Route path="/" exact component={Home}></Route>
         <Route path="/about" exact component={About}></Route>

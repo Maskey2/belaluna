@@ -6,8 +6,19 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { Link } from "react-router-dom";
-import Header1 from './../assets/productheader1.jpg'
-import Header2 from './../assets/productheader2.jpg'
+import Eve from './../assets/products/eve.jpg'
+import Cup from './../assets/products/cup.jpg'
+import Har from './../assets/products/har.jpg'
+import Ope from './../assets/products/open.jpg'
+import Tri from './../assets/products/tri.jpg'
+import Tri2 from './../assets/products/tri2.jpg'
+import Girl from './../assets/products/girl.jpg'
+import Good from './../assets/products/good.jpg'
+import Self from './../assets/products/self.jpg'
+import Stay from './../assets/products/stay.jpg'
+import This from './../assets/products/this.jpg'
+import Strong from './../assets/products/strong.jpg'
+import Twe from './../assets/products/2020.jpg'
 
 const useStyles = makeStyles((theme) => ({
   pagetitle: {
@@ -22,8 +33,10 @@ const useStyles = makeStyles((theme) => ({
     
   },
   pagesubtitle: {
-    paddingBottom: "40px",
-    fontSize: "25px",
+    padding: "10px 20px",
+    fontSize: "35px",
+    color:'#fff',
+    backgroundColor:'#438c9c',
     fontFamily: "Poppins, sans-serif",
     [theme.breakpoints.down("md")]: {
       fontSize: "23px", 
@@ -36,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
   img: {
     height:'auto',
-    width:'80%',
+    width:'300px',
 },
 headerimg: {
   height:'auto',
@@ -54,56 +67,69 @@ export default function Portfolio() {
   return (
     <div>
       <div  maxWidth="xl" style={{minHeight:'63vh'}}> 
-        
-        <img src={Header1} alt="" className={classes.headerimg}/>
-        <Grid container spacing={2} alignItems="center" justify="center">
-          <Grid item xs={6} sm={12} md={4} lg={4} align="center"  className="animate__animated animate__jackInTheBox" style={{marginTop:'10px'}}>
-            <Link to="/tshirt" className={classes.links}>
-            <img src="https://d2ct9xspam8wud.cloudfront.net/blog/2019/07/25140723/Design_elements.png" alt="" className={classes.img}/>
-            <p >T-Shirts</p>
-            </Link>
+      <Typography component="h2" align="center" className={classes.pagesubtitle}>
+        T-Shirt Designs
+        </Typography> 
+        <Grid container spacing={0} alignItems="center" justify="center">
+          <Grid item xs={6} sm={12} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" style={{marginTop:'10px'}}>
+            <img src={Eve} alt="" className={classes.img}/>
+            <p >Everest Kitchen</p>
+             </Grid>
+          <Grid item xs={6} sm={12} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+         <img src={Cup} alt="" className={classes.img}/>
+            <p >Code & Code</p>
           </Grid>
-          <Grid item xs={6} sm={12} md={4} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/mug" className={classes.links}>
-            <img src="https://d2ct9xspam8wud.cloudfront.net/blog/2019/07/25140723/Design_elements.png" alt="" className={classes.img}/>
-            <p >Mugs</p>
-            </Link>
-          </Grid>
-          {/* <Grid item xs={6} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/button" className={classes.links}>
-            <img src="https://d2ct9xspam8wud.cloudfront.net/blog/2019/07/25140723/Design_elements.png" alt="" className={classes.img}/>
-            <p >Buttons/ Keychains</p>
-            </Link>
-          </Grid>   */}
-          <Grid item xs={6} sm={12} md={6} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/claypot" className={classes.links}>
-            <img src="https://d2ct9xspam8wud.cloudfront.net/blog/2019/07/25140723/Design_elements.png" alt="" className={classes.img}/>
-            <p >Stickers</p>
-            </Link>
-          </Grid>      
+           <Grid item xs={6} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <img src={Har} alt="" className={classes.img}/>
+            <p >Harahan Handyman</p>
+            </Grid>   
+          <Grid item xs={6} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+           <img src={Ope} alt="" className={classes.img}/>
+            <p >Open Arms</p>
+           </Grid>   
+          <Grid item xs={6} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <img src={Tri} alt="" className={classes.img}/>
+            <p >Nepal & Always</p>           
+          </Grid> 
+          <Grid item xs={6} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+          <img src={Tri2} alt="" className={classes.img}/>
+            <p >Trio Design</p>
+            </Grid>    
              </Grid>
 
-        {/* <Typography component="h2" align="center" className={classes.pagesubtitle}>
-         Digital Design
-        </Typography> */}
-        <hr/><br></br>
-        <Grid container spacing={2} alignItems="center" justify="center">
-          <Grid item xs={6} sm={12} md={4} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src="https://miro.medium.com/max/1170/0*XXHFZiL1N1fHWaPW.jpg" alt="" className={classes.img}/>
-            <p >Logo Design</p> 
+         <Typography component="h2" align="center" className={classes.pagesubtitle}>
+        Stickers
+        </Typography> 
+       <br></br>
+        <Grid container spacing={0} alignItems="center" justify="center">
+          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+            <img src={Girl} alt="" className={classes.img}/>
+            <p >Girl Power</p> 
           </Grid>
-          <Grid item xs={6} sm={12} md={4} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src="https://miro.medium.com/max/1170/0*XXHFZiL1N1fHWaPW.jpg" alt="" className={classes.img}/>
-            <p >Poster/ Flyer/ Card Design</p>
+          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+            <img src={Good} alt="" className={classes.img}/>
+            <p >Good Vibes</p>
           </Grid>
-          <Grid item xs={6} sm={12} md={6} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src="https://miro.medium.com/max/1170/0*XXHFZiL1N1fHWaPW.jpg" alt="" className={classes.img}/>
-            <p >Website Design & Development</p>
+          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+            <img src={Self} alt="" className={classes.img}/>
+            <p >Self Love</p>
           </Grid>  
-          {/* <Grid item xs={6} sm={12} md={6} lg={4} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src="https://miro.medium.com/max/1170/0*XXHFZiL1N1fHWaPW.jpg" alt="" className={classes.img}/>
-            <p >Brand Design</p>
-          </Grid>       */}
+          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+            <img src={Stay} alt="" className={classes.img}/>
+            <p >Stay Sassy</p>
+          </Grid>  
+          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+            <img src={This} alt="" className={classes.img}/>
+            <p >This too shall pass</p>
+          </Grid> 
+          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+            <img src={Twe} alt="" className={classes.img}/>
+            <p >2020, Would not Recommend</p>
+          </Grid> 
+          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
+            <img src={Strong} alt="" className={classes.img}/>
+            <p >Stay Strong</p>
+          </Grid>      
              </Grid>
        
       </div>

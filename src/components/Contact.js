@@ -7,27 +7,10 @@ import EmailIcon from "@material-ui/icons/Email";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import "./../App.css";
+import Con from './../assets/contact.jpg'
 
 const useStyles = makeStyles((theme) => ({
-  pagetitle: {
-    color: "#231f20",
-    paddingTop: "30px",
-    fontFamily: "Roboto, sans-serif",
-    fontWeight: 600,
-    fontSize: "55px",
-    [theme.breakpoints.down("md")]: {
-      fontSize: "35px", 
-    },
-    
-  },
-  pagesubtitle: {
-    fontFamily: "Roboto, sans-serif",
-    paddingBottom: "40px",
-    fontSize: "25px",
-    [theme.breakpoints.down("md")]: {
-      fontSize: "23px", 
-    },
-  },
+  
   pageContent: {
     padding: "30px",
     fontSize: "18px",
@@ -42,11 +25,9 @@ export default function Product() {
     <Grid>
         
       <Container maxWidth="md" style={{minHeight:'63vh'}}>
-        <Typography component="h2" align="center" className={classes.pagetitle} >
-          Contact
-        </Typography>
+       
         <div align="center">
-          <img src="https://media.tenor.com/images/c9e5b501a5cec16a1de208f59c19ac2f/tenor.gif"/>
+          <img src={Con} style={{width:'500px',marginTop:'1%'}}/>
           <br></br>
                 <a
                   href="https://www.instagram.com/letthedesignflow"
@@ -73,7 +54,7 @@ export default function Product() {
                   <EmailIcon fontSize="large" />
                 </a>
               </div>
-        <hr/>
+        
       </Container>
 
        

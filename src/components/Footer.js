@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   textfield: {
-    margin: "5px",
+   
     backgroundColor: "white",
     color: "#213C54",
     borderRadius: "20px",
@@ -81,7 +81,7 @@ export default function Footer() {
     <Grid style={{ backgroundColor: "#438c9c"}}>
       <Container maxWidth="lg" component="footer" className={classes.footer}>
         <Grid container spacing={2}>
-          <Grid item xs={6} sm={3} md={4} lg={4}>
+          <Grid item xs={6} sm={6} md={6} lg={6}>
             <Typography component={"span"} className={classes.headerlink}>
               Bella Luna
             </Typography>
@@ -96,31 +96,15 @@ export default function Footer() {
               <a href="/about" className={classes.link}>
                 <li>About </li>{" "}
               </a>
+              <a href="/products" className={classes.link}>
+                <li>Designs </li>{" "}
+              </a>
               
             </ul>
+            
           </Grid>
-          <Grid item xs={6} sm={3} md={4} lg={4}>
-            <Typography
-              component={"span"}
-              gutterBottom
-              className={classes.headerlink}
-            ></Typography>
-            <ul>
-            <Link to="/products" className={classes.link}>
-                <li>Designs </li>
-              </Link>
-              <Link to="/customer" className={classes.link}>
-                <li>Customers </li>
-              </Link>             
-              {/* <Link to="/privacy" className={classes.link}>
-                <li>Privacy Policy </li>
-              </Link>
-              <Link to="/terms" className={classes.link}>
-                <li>Terms and Conditions </li>
-              </Link>               */}
-            </ul>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} lg={4}>
+    
+          <Grid item xs={12} sm={6} md={6} lg={6}>
             <Typography
               component="h2"
               className={classes.headerlink}
