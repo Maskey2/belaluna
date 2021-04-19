@@ -69,7 +69,7 @@ export default function TemporaryDrawer() {
                <ListItem key = {4} button divider>
                <Link to="/products" className={classes.reslink}>Products</Link></ListItem>               
                <ListItem key = {5} button divider>               
-               <a href="#contact" className={classes.reslink}>Contact</a> </ListItem>
+               <a href="/contact" className={classes.reslink}>Contact</a> </ListItem>
              
       </List>
     </div>
@@ -83,7 +83,7 @@ export default function TemporaryDrawer() {
             <AppBar  className={classes.color}>        
           <Toolbar  >
             <Grid container direction = "row" justify = "space-between"  >            
-              <MenuIcon style={{fontSize:'30px', color:'black'}} onClick={toggleDrawer(anchor, true)}>{anchor}/></MenuIcon>          
+              <MenuIcon style={{fontSize:'30px', color:'white'}} onClick={toggleDrawer(anchor, true)}>{anchor}/></MenuIcon>          
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>

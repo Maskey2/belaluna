@@ -15,6 +15,14 @@ const useStyles = makeStyles((theme) => ({
     padding: "30px",
     fontSize: "18px",
   },
+  img: {
+    height:'auto',
+    width:'500px',
+    [theme.breakpoints.down("sm")]: {
+      width:'340px',
+      marginTop:'100px'
+    },  
+},
  
 }));
 
@@ -22,12 +30,10 @@ export default function Product() {
   const classes = useStyles();
 
   return (
-    <Grid>
-        
-      <Container maxWidth="md" style={{minHeight:'63vh'}}>
-       
+    <Grid>        
+      <Container maxWidth="md" style={{minHeight:'63vh'}}>       
         <div align="center">
-          <img src={Con} style={{width:'500px',marginTop:'1%'}}/>
+          <img src={Con} className={classes.img}/>
           <br></br>
                 <a
                   href="https://www.instagram.com/letthedesignflow"

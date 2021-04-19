@@ -33,13 +33,12 @@ const useStyles = makeStyles((theme) => ({
     
   },
   pagesubtitle: {
-    padding: "10px 20px",
     fontSize: "35px",
-    color:'#fff',
-    backgroundColor:'#438c9c',
+    borderBottom: '3px solid #438c9c',
     fontFamily: "Poppins, sans-serif",
     [theme.breakpoints.down("md")]: {
       fontSize: "23px", 
+      marginTop:'60px'
     },
   },
   links: {
@@ -50,6 +49,9 @@ const useStyles = makeStyles((theme) => ({
   img: {
     height:'auto',
     width:'300px',
+    [theme.breakpoints.down("sm")]: {
+      width:'150px',
+    },  
 },
 headerimg: {
   height:'auto',
