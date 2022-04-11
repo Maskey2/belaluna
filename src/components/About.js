@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:"#438c9c",
     '&:hover': {
       color: "#000",
-      backgroundColor:"#e2d929",
+      backgroundColor:"lightgrey",
     }
  
   },
@@ -72,29 +72,29 @@ export default function Product() {
         <Grid container spacing={2} alignItems="center" justify="center" style={{marginBottom:'10px'}}>
        
           <Grid item xs={12} sm={12} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/products">
+          <a href="/products#web">
             <p className={classes.titles}>Website Development</p>
             <img src={Web} alt="" className={classes.titleimg}/>  
-            </Link>
+            </a>
           </Grid>
          
           <Grid item xs={12} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/products">
+          <a href="/products#design">
           <p className={classes.titles}>Graphic Design</p>
           <img src={Gra} alt="" className={classes.titleimg}/> 
-            </Link>
+            </a>
           </Grid>  
           <Grid item xs={12} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/products">
+          <a href="/products#tshirts">
           <p className={classes.titles}>Custom T-Shirts</p>
           <img src={Tsh} alt="" className={classes.titleimg}/> 
-           </Link>
+           </a>
           </Grid>    
           <Grid item xs={12} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-          <Link to="/products">
+          <a href="/products#stickers">
           <p className={classes.titles}>Custom Stickers</p>
           <img src={Sti} alt="" className={classes.titleimg}/> 
-           </Link>
+           </a>
           </Grid>    
              </Grid>
       </Container>

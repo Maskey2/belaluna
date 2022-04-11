@@ -104,7 +104,7 @@ function ElevateAppBar(props) {
           <Link to="/" className={classes.link}>Home
           </Link></Typography>
           <Typography component={'span'} color="inherit" style={{flexGrow:1}}> 
-          <Link to="/about" className={classes.link}>About
+          <Link to="/services" className={classes.link}>Services
           </Link></Typography>
           <Typography component={'span'}  color="inherit" style={{flexGrow:1}}> 
           <Link to="/products" className={classes.link}>Designs</Link></Typography>  

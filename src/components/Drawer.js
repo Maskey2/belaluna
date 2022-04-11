@@ -65,7 +65,7 @@ export default function TemporaryDrawer() {
               <ListItem key = {1} button divider>
              <Link to="/" className={classes.reslink}>Home</Link></ListItem>
                <ListItem key = {2} button divider>
-               <Link to="/about" className={classes.reslink}>About</Link></ListItem>
+               <Link to="/services" className={classes.reslink}>Services</Link></ListItem>
                <ListItem key = {4} button divider>
                <Link to="/products" className={classes.reslink}>Products</Link></ListItem>               
                <ListItem key = {5} button divider>               

@@ -26,10 +26,10 @@ export default function App() {
    
       <Navbar/>
       <Box display={{ xs: 'block', sm: 'none', md: 'none', lg: 'none' }} ><Drawer/></Box>
-      {/* <Box display={{ xs: 'block', sm: 'block', md: 'none' }}><br/><br/><br/></Box> */}
+      <Box display={{ xs: 'block', sm: 'block', md: 'none' }}><br/><br/></Box> 
       <Switch>       
         <Route path="/" exact component={Home}></Route>
-        <Route path="/about" exact component={About}></Route>
+        <Route path="/services" exact component={About}></Route>
         <Route path="/contact" exact component={Contact}></Route>
         <Route path="/products" exact component={Products}></Route>
         <Route path="/customer" exact component={Customer}></Route>

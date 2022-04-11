@@ -19,121 +19,183 @@ import Stay from './../assets/products/stay.jpg'
 import This from './../assets/products/this.jpg'
 import Strong from './../assets/products/strong.jpg'
 import Twe from './../assets/products/2020.jpg'
+import Np from './../assets/products/np.PNG'
+import Everest from './../assets/products/everest.jpg'
+import Wit from './../assets/products/wit.jpg'
+import Poster from './../assets/products/poster.JPG'
+import Logo from './../assets/products/logo.JPG'
+import Event from './../assets/products/event.png'
+
 
 const useStyles = makeStyles((theme) => ({
   pagetitle: {
     color: "#231f20",
-    paddingTop: "30px",
+    marginBottom:'40px', 
     fontFamily: "Poppins, sans-serif",
     fontWeight: 600,
-    fontSize: "55px",
+    fontSize: "40px",
     [theme.breakpoints.down("md")]: {
-      fontSize: "35px", 
+      fontSize: "25px",
+      padding: "30px",
+      marginBottom:'10px', 
     },
-    
+
   },
-  pagesubtitle: {
-    fontSize: "35px",
-    borderBottom: '3px solid #438c9c',
+  pageContent: {
+    fontSize: "20px",
     fontFamily: "Poppins, sans-serif",
     [theme.breakpoints.down("md")]: {
-      fontSize: "23px", 
-      marginTop:'60px'
+      fontSize: "18px",
+      fontSize: "20px",
+      padding: "0 20px",
     },
   },
   links: {
-    textDecoration:'none',
-    color:'black',
+    textDecoration: 'none',
+    color: 'black',
     fontSize: "22px",
   },
   img: {
-    height:'auto',
-    width:'300px',
+    height: 'auto',
+    width: '300px',
     [theme.breakpoints.down("sm")]: {
-      width:'150px',
-    },  
-},
-headerimg: {
-  height:'auto',
-  width:'100%',
-  [theme.breakpoints.down("md")]: {
-    marginTop:'55px'
-  },  
-},
-
-
+      width: '250px',
+    },
+  },
+  imgb: {
+    height: 'auto',
+    width: '500px',
+    [theme.breakpoints.down("sm")]: {
+      width: '250px',
+    },
+  },
+hr:{
+  margin:'40px',
+  border: 'none'
+}
 }));
 
 export default function Portfolio() {
   const classes = useStyles();
   return (
     <div>
-      <div  maxWidth="xl" style={{minHeight:'63vh'}}> 
-      <Typography component="h2" align="center" className={classes.pagesubtitle}>
-        T-Shirt Designs
-        </Typography> 
-        <Grid container spacing={0} alignItems="center" justify="center">
-          <Grid item xs={6} sm={12} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" style={{marginTop:'10px'}}>
-            <img src={Eve} alt="" className={classes.img}/>
-            <p >Everest Kitchen</p>
-             </Grid>
-          <Grid item xs={6} sm={12} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-         <img src={Cup} alt="" className={classes.img}/>
-            <p >Code & Code</p>
-          </Grid>
-           <Grid item xs={6} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-          <img src={Har} alt="" className={classes.img}/>
-            <p >Harahan Handyman</p>
-            </Grid>   
-          <Grid item xs={6} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-           <img src={Ope} alt="" className={classes.img}/>
-            <p >Open Arms</p>
-           </Grid>   
-          <Grid item xs={6} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-          <img src={Tri} alt="" className={classes.img}/>
-            <p >Nepal & Always</p>           
-          </Grid> 
-          <Grid item xs={6} sm={12} md={6} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-          <img src={Tri2} alt="" className={classes.img}/>
-            <p >Trio Design</p>
-            </Grid>    
-             </Grid>
+      <div maxWidth="xl" style={{ minHeight: '63vh', marginBottom:'40px' }}>
 
-         <Typography component="h2" align="center" className={classes.pagesubtitle}>
-        Stickers
-        </Typography> 
-       <br></br>
-        <Grid container spacing={0} alignItems="center" justify="center">
-          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src={Girl} alt="" className={classes.img}/>
-            <p >Girl Power</p> 
-          </Grid>
-          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src={Good} alt="" className={classes.img}/>
-            <p >Good Vibes</p>
-          </Grid>
-          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src={Self} alt="" className={classes.img}/>
-            <p >Self Love</p>
-          </Grid>  
-          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src={Stay} alt="" className={classes.img}/>
-            <p >Stay Sassy</p>
-          </Grid>  
-          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src={This} alt="" className={classes.img}/>
-            <p >This too shall pass</p>
-          </Grid> 
-          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src={Twe} alt="" className={classes.img}/>
-            <p >2020, Would not Recommend</p>
-          </Grid> 
-          <Grid item xs={6} sm={3} md={3} lg={3} align="center"  className="animate__animated animate__jackInTheBox" >
-            <img src={Strong} alt="" className={classes.img}/>
-            <p >Stay Strong</p>
-          </Grid>      
-             </Grid>
+      <Typography component="h2" align="center" className={classes.pagetitle} id="web">
+          Website Development
+        </Typography>
        
+        <Grid container spacing={0} alignItems="center" justify="center">
+        <Grid item xs={12} sm={12} md={4} lg={4} align="center" className="animate__animated animate__jackInTheBox" >
+          <a href="https://www.wit-selu.com/" target="_blank">
+            <img src={Wit} alt="" className={classes.imgb} />
+            <p  className={classes.pageContent} >Women in Technology</p>
+            <p >WIT Organization, SELU, LA </p>   </a>
+          </Grid> 
+          <Grid item xs={12} sm={12} md={4} lg={4} align="center" className="animate__animated animate__jackInTheBox" style={{ marginTop: '10px' }}>
+           <a href="https://www.everestkitchenalbany.com/" target="_blank">
+            <img src={Everest} alt="" className={classes.imgb} />
+            <p  className={classes.pageContent} >Everest Kitchen</p>
+            <p  >A Nepali Restaurent in Albany, CA</p></a>
+          </Grid>
+          <Grid item xs={12} sm={12} md={4} lg={4} align="center" className="animate__animated animate__jackInTheBox" >
+          <a href="https://www.namasteypatio.com/" target="_blank">
+            <img src={Np} alt="" className={classes.imgb} />
+            <p  className={classes.pageContent} >Namastey Patio</p>
+            <p  className={classes.pageContent} >Nepalese and Indian Restaurent in Oakland, CA </p>           
+            </a>
+          </Grid>          
+        </Grid>
+<hr className={classes.hr}/>
+
+        <Typography component="h2" align="center" className={classes.pagetitle} id="design">
+         Graphic Design
+        </Typography>
+       
+        <Grid container spacing={0} alignItems="center" justify="center">
+        <Grid item xs={12} sm={12} md={4} lg={4} align="center" className="animate__animated animate__jackInTheBox" >        
+            <img src={Poster} alt="" className={classes.imgb} />
+            <p  className={classes.pageContent} >International Women's Dayy</p>
+           
+          </Grid> 
+          <Grid item xs={12} sm={12} md={4} lg={4} align="center" className="animate__animated animate__jackInTheBox" style={{ marginTop: '10px' }}>
+          
+            <img src={Logo} alt="" className={classes.imgb} />
+            <p  className={classes.pageContent} >Bae is Hangry Logo</p>
+         
+          </Grid>
+          <Grid item xs={12} sm={12} md={4} lg={4} align="center" className="animate__animated animate__jackInTheBox" >       
+            <img src={Event} alt="" className={classes.imgb} />
+            <p  className={classes.pageContent} >Event Invitation Card</p> 
+          </Grid>          
+        </Grid>
+        <hr className={classes.hr}/>
+
+        <Typography component="h2" align="center" className={classes.pagetitle} id="tshirts">
+          T-Shirt Designs
+        </Typography>
+        <Grid container spacing={0} alignItems="center" justify="center">
+          <Grid item xs={12} sm={12} md={3} lg={3} align="center" className="animate__animated animate__jackInTheBox" style={{ marginTop: '10px' }}>
+            <img src={Eve} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Everest Kitchen</p>
+          </Grid>
+          <Grid item xs={12} sm={12} md={3} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Cup} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Code & Code</p>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Har} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Harahan Handyman</p>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Ope} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Open Arms</p>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Tri} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Nepal & Always</p>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Tri2} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Trio Design</p>
+          </Grid>
+        </Grid>
+        <hr className={classes.hr}/>
+        <Typography component="h2" align="center" className={classes.pagetitle} id="stickers">
+          Stickers
+        </Typography>
+        <br></br>
+        <Grid container spacing={0} alignItems="center" justify="center">
+          <Grid item xs={12} sm={3} md={3} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Girl} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Girl Power</p>
+          </Grid>
+          <Grid item xs={12} sm={3} md={3} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Good} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Good Vibes</p>
+          </Grid>
+          <Grid item xs={12} sm={3} md={3} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Self} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Self Love</p>
+          </Grid>
+          <Grid item xs={12} sm={3} md={3} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Stay} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Stay Sassy</p>
+          </Grid>
+          <Grid item xs={12} sm={3} md={3} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={This} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >This too shall pass</p>
+          </Grid>
+          <Grid item xs={12} sm={3} md={3} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Twe} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >2020, Would not Recommend</p>
+          </Grid>
+          <Grid item xs={12} sm={3} md={3} lg={3} align="center" className="animate__animated animate__jackInTheBox" >
+            <img src={Strong} alt="" className={classes.img} />
+            <p  className={classes.pageContent} >Stay Strong</p>
+          </Grid>
+        </Grid>
+
       </div>
     </div>
   );
